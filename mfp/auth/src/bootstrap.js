@@ -30,7 +30,6 @@ const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
 // call mount immediately
 if (process.env.NODE_ENV === 'development') {
   const devRoot = document.querySelector('#_auth-dev-root');
-
   if (devRoot) {
     mount(devRoot, { defaultHistory: createBrowserHistory() });
   }
